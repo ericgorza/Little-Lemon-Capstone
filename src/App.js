@@ -6,6 +6,7 @@ import Hero from './components/Hero'
 import Testimonials from './components/Testimonials';
 import Highlights from './components/Highlights';
 import Header from './components/Header';
+import Spacer from './components/Spacer-footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Highlights/>
       <Testimonials/>
       <About/>
+      <Spacer/>
       <Footer/>      
     </>
   );

@@ -192,3 +192,154 @@ nav a {
 
 /* TESTIMONIALS */
 
+.testimonials-article {
+    text-align: center; /* Centraliza o título */
+    margin: 5rem 0 0rem 0; /* Adiciona margem superior e inferior ao artigo */
+    background-color: #495e57;
+    padding: 1.25rem 5rem 1.5rem 5rem;
+}
+
+.testimonials-article h1 {
+    color: #f4ce14;
+    margin-bottom: 3rem;
+    font-size: 2em;
+}
+
+.testimonials-cards {
+    display: flex; /* Distribui os cartões horizontalmente */
+    justify-content: space-between; /* Espaço igual entre os cartões */
+    margin: 2rem 0; /* Adiciona margem superior e inferior aos cartões */
+    height: 200px;
+}
+
+.testimonial-card {
+    text-align: center; /* Centraliza o conteúdo do cartão */
+    width: 20%; /* Define a largura dos cartões (ajuste conforme necessário) */
+    padding: 1rem; /* Adiciona espaçamento interno aos cartões */
+    margin-right: 1rem;
+    border: none; /* Adiciona uma borda ao redor dos cartões (opcional) */
+    background-color: #F5F5F5;
+}
+
+.stars {
+    font-size: 1rem;
+    color: #f4ce14;
+}
+
+.profile-picture img {
+    max-width: 28%;
+    border-radius: 50%; /* Arredonda a imagem de perfil */
+    padding: 1rem 0.3rem 1rem 0.3rem
+}
+
+.person-name {
+    font-weight: bold;
+    font-size: 0.2em;
+}
+
+.testimonial {
+    font-style: italic;
+    font-size: 0.4em;
+    margin-top: 0.5rem;
+}
+
+/* ABOUT SECTION */
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    padding: 0rem 2rem 1.2rem 5rem;
+}
+
+.about-left {
+    flex: 1;
+    padding: 1rem;
+}
+
+.about-left h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-left h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.about-left p {
+    font-size: 1rem;
+}
+
+.about-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-top {
+    max-width: 50%;
+    margin-bottom: 1rem;
+    position: relative;
+    left: 40%;
+    top: 120px;
+    z-index: 0;
+    border-radius: 20px;
+}
+
+.image-bottom {
+    max-width: 50%;
+    position: relative;
+    left: 10%;
+    bottom: 50px;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    background-color: #F5F5F5;
+    padding: 1.25rem 5rem 1.2rem 5rem;
+    padding: 2rem;
+    color:#000;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 1rem;
+}
+
+footer img {
+    max-width: 100%;
+    width: 90%;
+    margin-top: 50%;
+    margin-right: 40px;
+
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: #000;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    background-color: #f4ce14;
+    transition: 0.25s;
+}
+
+.spacer-footer {
+    background-color: #495e57;
+}
