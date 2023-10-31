@@ -1,0 +1,36 @@
+.Navbar {
+    display: flex;
+    align-items: center; /* Centralizar verticalmente */
+    background-color: rgba(255, 255, 255, 0.965); /* Cor de fundo, personalize conforme necessário */
+    height: 15%; /* Altura do navbar, personalize conforme necessário */
+    width: 100%;
+    margin-top: 10px;
+}
+
+.Navbar ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-left: 42%;
+}
+
+.Navbar li {
+    list-style: none;
+}
+
+nav a {
+    font-family: Karla,sans-serif;
+    font-weight: 800;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    margin-right: 2em;
+}
+
+.Navbar img {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em 8em;
+    width: 60px;
+}
