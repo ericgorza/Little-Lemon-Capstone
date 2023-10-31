@@ -1,10 +1,34 @@
+/* ELEMENTOS GERAIS */
+
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: Markazi Text,serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: Markazi Text,serif;
+}
+
+p {
+    font-family: Markazi Text,serif;
+}
+
+/* NAVBAR */
+
 .Navbar {
     display: flex;
+    padding: 1.25rem 5rem 1.2rem 5rem;
     align-items: center; /* Centralizar verticalmente */
-    background-color: rgba(255, 255, 255, 0.965); /* Cor de fundo, personalize conforme necessário */
+    background-color: #F5F5F5; /* Cor de fundo, personalize conforme necessário */
     height: 15%; /* Altura do navbar, personalize conforme necessário */
-    width: 100%;
+    width: auto;
     margin-top: 10px;
+    margin-bottom: 2rem;
 }
 
 .Navbar ul {
@@ -12,7 +36,7 @@
     text-align: center;
     display: flex;
     align-items: center;
-    margin-left: 42%;
+    margin-left: auto;
 }
 
 .Navbar li {
@@ -28,9 +52,143 @@ nav a {
     margin-right: 2em;
 }
 
+.Navbar a:hover {
+    background-color: #f4ce14;
+    transition: 0.25s;
+}
+
 .Navbar img {
     display: flex;
     flex-wrap: wrap;
-    margin: 1em 8em;
-    width: 60px;
+    margin: 1em;
+    width: 60%;
 }
+
+/* HERO SECTION */
+
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1.25rem 5rem 1.2rem 5rem;
+    margin-top: -1.0rem;
+    background-color: #495e57;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    color: #f4ce14
+}
+
+.hero-section h3 {
+    font-size: 1.5rem;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+    color: #F5F5F5;
+
+}
+
+.hero-section p {
+    font-size: 1rem;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+    color: #F5F5F5;
+    margin-right: 35px;
+}
+
+.hero-section > img {
+    border-radius: 20px; 
+    position: absolute;
+    right: 17%;
+    top: 23%;
+    width: 14rem;
+    height: 20rem;
+}
+
+
+.hero-section button {
+    background-color: #f4ce14;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    height: 2rem;
+    width: 10rem; /* Largura do botão */
+    text-align: center;
+    font-family: Markazi Text, serif;
+    color: black;
+    font-weight: 800;
+    margin-left: 5rem;
+    margin-top: 0rem;
+    font-size: 0.8em;
+    word-wrap: break-word; /* Adicione esta linha */ /* Tamanho da fonte */
+}
+
+/* HIGHLIGHTS */
+
+.highlight-article {
+    background-color: #f5f5f599;
+    padding: 1.25rem 5rem 1.2rem 5rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.highlight-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.highlight-article h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.highlight-article button {
+    background-color: #f4ce14;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: black;
+    font-weight: 800;
+    font-size: 0.8em;
+    width: 10rem;
+    margin-right: 2rem;
+
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: #f5f5f556;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    margin-top: 3rem;
+    margin-right: 1rem;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    width: 15rem;
+    height: 17rem;
+    border-radius: 8px;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.card p {
+    font-size: 1rem;
+}
+
+/* TESTIMONIALS */
+
