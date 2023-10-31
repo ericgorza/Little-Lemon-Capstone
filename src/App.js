@@ -7,18 +7,16 @@ import Testimonials from './components/Testimonials';
 import Highlights from './components/Highlights';
 import Header from './components/Header';
 import Spacer from './components/Spacer-footer';
+import Routing from "./components/Routes";
 
 function App() {
   return (
     <>
       <Navbar/>
-      <Hero/>
-      <Highlights/>
-      <Testimonials/>
-      <About/>
+      <Routing/>
       <Spacer/>
-      <Footer/>      
-    </>
+      <Footer/>
+    </>      
   );
 }
 

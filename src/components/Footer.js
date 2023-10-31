@@ -2,6 +2,7 @@ import React from 'react';
 import Logo from '../images/Logo.png';
 import '../styles/style.css'
 import Spacer from './Spacer-footer';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -13,11 +14,11 @@ const Footer = () => {
             <div className="footer-column">
                 <h2>Navigation</h2>
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Menu</a></li>
-                    <li><a href="/">Reservations</a></li>
-                    <li><a href="/">Online</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/">Menu</Link></li>
+                    <li><Link to="/">Reservations</Link></li>
+                    <li><Link to="/">Online</Link></li>
                 </ul>
             </div>
             <div className="footer-column">
