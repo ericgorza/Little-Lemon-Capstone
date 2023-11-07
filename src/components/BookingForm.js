@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { submitAPI } from '../dateAPI';
 
-function BookingForm({availableTimes, dispatch}) {
+function BookingForm({availableTimes, updateTimes}) {
   const [formDate, setFormDate] = useState()
   const [formTime, setFormTime] = useState()
   const [formGuests, setFormGuests] = useState(1)
@@ -12,7 +14,11 @@ function BookingForm({availableTimes, dispatch}) {
 
   function handleDateChange(e) {
     setFormDate(e.target.value)
-    const newDate = e.target.value
+    var stringfy = e.target.value
+    const date = new Date(stringfy)
+
+    updateTimes(date);
+    setFinalTime(availableTimes.map((times)=> <option>{times}</option>))
   }
 
   const handleSubmit = (e) => {
@@ -65,7 +71,7 @@ function BookingForm({availableTimes, dispatch}) {
         </select>
 
 
-      <button type="submit">Submit Reservation</button>
+      <button type="submit" onClick={handleSubmit}><Link to="/confirmation">Submit Reservation</Link></button>
     </form>
   );
 }
