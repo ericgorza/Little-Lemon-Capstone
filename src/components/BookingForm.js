@@ -71,7 +71,7 @@ function BookingForm({availableTimes, updateTimes}) {
         </select>
 
 
-      <button type="submit" onClick={handleSubmit}><Link to="/confirmation">Submit Reservation</Link></button>
+      <button type="submit"><Link to="/confirmation">Submit Reservation</Link></button>
     </form>
   );
 }
