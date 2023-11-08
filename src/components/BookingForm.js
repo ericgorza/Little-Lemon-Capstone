@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { submitAPI } from '../dateAPI';
+import "../styles/style.css"
 
 function BookingForm({availableTimes, updateTimes}) {
   const [formDate, setFormDate] = useState()
   const [formTime, setFormTime] = useState()
   const [formGuests, setFormGuests] = useState(1)
   const [formOccasion, setFormOccasion] = useState()
+  const [formName, setFormName] = useState("")
 
   const [finalTime, setFinalTime] = useState(
     availableTimes.map((times) => <option>{times}</option>)
@@ -29,12 +31,27 @@ function BookingForm({availableTimes, updateTimes}) {
   return (
     <form onSubmit={handleSubmit}>
       <label htmlFor="date">
+        Name:
+      </label>
+        <input
+          type="name"
+          id="name"
+          name="name"
+          required
+          minLength={2}
+          maxLength={30}
+          value={formName}
+          onChange={(e)=> setFormName(e.target.value)}
+        />
+
+      <label htmlFor="date">
         Date:
       </label>
         <input
           type="date"
           id="date"
           name="date"
+          required
           value={formDate}
           onChange={handleDateChange}
         />
@@ -44,6 +61,8 @@ function BookingForm({availableTimes, updateTimes}) {
         </label>
         <select
           name="time"
+          id="time"
+          required
           value={formTime}
           onChange={(e) => setFormTime(e.target.value)}
         >
@@ -57,6 +76,9 @@ function BookingForm({availableTimes, updateTimes}) {
         <input
           type="number"
           name="guests"
+          required
+          min={1}
+          max={10}
           value={formGuests}
           onChange={(e) => setFormGuests(e.target.value)}
         />
@@ -65,15 +87,16 @@ function BookingForm({availableTimes, updateTimes}) {
       <label>
         Occasion:
         </label>
-        <select name="occasion" value={formOccasion} onChange={(e) => setFormOccasion(e.target.value)}>
+        <select name="occasion" value={formOccasion} onChange={(e) => setFormOccasion(e.target.value)} required>
+          <option value="Birthday">None</option>
           <option value="Birthday">Birthday</option>
           <option value="Anniversary">Anniversary</option>
         </select>
 
-
-      <button type="submit"><Link to="/confirmation">Submit Reservation</Link></button>
+      <button type="submit" id="form-button"><Link to="/confirmation">Submit Form</Link></button>
     </form>
   );
 }
 
 export default BookingForm;
+
